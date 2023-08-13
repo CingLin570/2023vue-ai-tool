@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /*擴充專案的全站樣式*/
+  html {
+    font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  body {
+    background: #000;
+  }
+}
+
+@layer components {
+  /*自組元件*/
+  
+}
+
+@layer utilities{
+  /*自組樣式*/
+}
+.shadow::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #020202 4%, transparent 30%, transparent 50%, transparent 70%, #020202 96%);
+}
+.swiper-slide {
+  height: auto !important;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  --swiper-theme-color: white;
+  --swiper-pagination-bullet-inactive-color: #525252;
+}
+.swiper-pagination-bullet-active {
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+}
+
